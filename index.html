@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Dictionary</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <h1>My Dictionary</h1>
+        <p>自分だけの辞書</p>
+    </div>
+</header>
+
+
+<main class="container">
+
+    <!-- 検索 -->
+    <section class="search-section">
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="単語・読み・意味を検索..."
+                autocomplete="off"
+            >
+
+            <button id="searchButton">
+                検索
+            </button>
+        </div>
+
+        <div class="search-options">
+            <label>
+                <input type="radio" name="searchType" value="all" checked>
+                すべて
+            </label>
+
+            <label>
+                <input type="radio" name="searchType" value="word">
+                単語
+            </label>
+
+            <label>
+                <input type="radio" name="searchType" value="reading">
+                読み
+            </label>
+
+            <label>
+                <input type="radio" name="searchType" value="meaning">
+                意味
+            </label>
+        </div>
+
+    </section>
+
+
+    <!-- 検索結果 -->
+    <section class="result-section">
+
+        <div class="result-header">
+            <h2>検索結果</h2>
+            <span id="resultCount">0件</span>
+        </div>
+
+        <div id="resultList" class="result-list">
+            <!-- JavaScriptでここに表示 -->
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <p>My Dictionary</p>
+</footer>
+
+
+<script src="dictionary.js"></script>
+
+</body>
+</html>
