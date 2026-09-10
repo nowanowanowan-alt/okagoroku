@@ -220,6 +220,9 @@ const suggestExample =
 const suggestNote =
     document.getElementById("suggestNote");
 
+const suggestName =
+    document.getElementById("suggestName");
+
     const resultList = document.getElementById("resultList");
     const resultCount = document.getElementById("resultCount");
 
@@ -353,6 +356,18 @@ submitSuggest.addEventListener(
         const note =
             suggestNote.value.trim();
 
+        const name =
+            suggestName.value.trim();
+
+        const selectedType =
+            document.querySelector(
+                'input[name="suggestType"]:checked'
+            );
+
+        const type =
+            selectedType
+            ? selectedType.value
+            : "OK";
 
         if (word === "") {
 
@@ -386,17 +401,13 @@ submitSuggest.addEventListener(
                     },
 
                     body: JSON.stringify({
-
+                        type: type,
                         word: word,
-
                         meaning: meaning,
-
                         example: example,
-
-                        note: note
-
+                        note: note,
+                        name: name
                     })
-
                 }
             );
 
@@ -406,12 +417,15 @@ submitSuggest.addEventListener(
                 "管理者の確認後、採用されます。"
             );
 
-
             suggestWord.value = "";
             suggestMeaning.value = "";
             suggestExample.value = "";
             suggestNote.value = "";
+            suggestName.value = "";
 
+            document.querySelector(
+                'input[name="suggestType"][value="OK"]'
+            ).checked = true;
 
             suggestModal.classList.remove(
                 "show"
