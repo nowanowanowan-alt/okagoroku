@@ -312,7 +312,7 @@ const suggestNote =
 
 // ★ここにApps ScriptのURLを入れる
 const SCRIPT_URL =
-    "ここにApps ScriptのURLを貼る";
+    "https://script.google.com/macros/s/AKfycbwGRRKQwhhX9aIGHa4DFtnBkTad-Gdy1ap4W3Qie8bJG7QIxMjtPcTTc_jdT0YjeKvU/exec";
 
 
 suggestButton.addEventListener(
