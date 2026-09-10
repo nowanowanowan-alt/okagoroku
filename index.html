@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -28,7 +29,7 @@
             <input
                 type="text"
                 id="searchInput"
-                placeholder="単語・読み・意味を検索..."
+                placeholder="単語・意味・用例・備考を検索..."
                 autocomplete="off"
             >
 
@@ -38,6 +39,7 @@
         </div>
 
         <div class="search-options">
+
             <label>
                 <input type="radio" name="searchType" value="all" checked>
                 すべて
@@ -52,7 +54,18 @@
                 <input type="radio" name="searchType" value="meaning">
                 意味
             </label>
+
         </div>
+
+    </section>
+
+
+    <!-- 語録を提案 -->
+    <section class="suggest-section">
+
+        <button id="openSuggestButton" class="suggest-button">
+            ＋ 語録を提案する
+        </button>
 
     </section>
 
@@ -74,6 +87,131 @@
 </main>
 
 
+<!-- 提案フォーム -->
+<div id="suggestModal" class="suggest-modal">
+
+    <div class="suggest-modal-content">
+
+        <div class="suggest-header">
+
+            <h2>語録を提案する</h2>
+
+            <button
+                id="closeSuggestButton"
+                class="close-button"
+                type="button"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="suggest-form">
+
+            <!-- 種類 -->
+            <label>
+                種類
+
+                <div class="suggest-type">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="suggestType"
+                            value="OK"
+                            checked
+                        >
+                        OK
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="suggestType"
+                            value="TRT"
+                        >
+                        TRT
+                    </label>
+
+                </div>
+
+            </label>
+
+
+            <!-- 単語 -->
+            <label>
+                単語
+
+                <input
+                    type="text"
+                    id="suggestWord"
+                    placeholder="例：一考"
+                >
+            </label>
+
+
+            <!-- 意味 -->
+            <label>
+                意味
+
+                <textarea
+                    id="suggestMeaning"
+                    placeholder="意味を入力"
+                ></textarea>
+            </label>
+
+
+            <!-- 用例 -->
+            <label>
+                用例
+
+                <textarea
+                    id="suggestExample"
+                    placeholder="実際の発言・用例など"
+                ></textarea>
+            </label>
+
+
+            <!-- 備考 -->
+            <label>
+                備考
+
+                <textarea
+                    id="suggestNote"
+                    placeholder="補足など（任意）"
+                ></textarea>
+            </label>
+
+
+            <!-- 名前 -->
+            <label>
+                名前
+                <span class="optional">任意</span>
+
+                <input
+                    type="text"
+                    id="suggestName"
+                    placeholder="空欄なら匿名"
+                >
+            </label>
+
+
+            <button
+                id="submitSuggest"
+                class="submit-suggest-button"
+                type="button"
+            >
+                提案する
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
 <footer class="footer">
     <p>Tetsuryokukai Goroku</p>
 </footer>
@@ -83,3 +221,4 @@
 
 </body>
 </html>
+```
