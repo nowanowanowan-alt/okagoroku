@@ -196,6 +196,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("searchInput");
     const searchButton = document.getElementById("searchButton");
 
+const suggestButton =
+    document.getElementById("suggestButton");
+
+const suggestModal =
+    document.getElementById("suggestModal");
+
+const cancelSuggest =
+    document.getElementById("cancelSuggest");
+
+const submitSuggest =
+    document.getElementById("submitSuggest");
+
+const suggestWord =
+    document.getElementById("suggestWord");
+
+const suggestMeaning =
+    document.getElementById("suggestMeaning");
+
+const suggestExample =
+    document.getElementById("suggestExample");
+
+const suggestNote =
+    document.getElementById("suggestNote");
+
     const resultList = document.getElementById("resultList");
     const resultCount = document.getElementById("resultCount");
 
@@ -282,6 +306,137 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
 
+// ============================
+// 単語提案
+// ============================
+
+// ★ここにApps ScriptのURLを入れる
+const SCRIPT_URL =
+    "ここにApps ScriptのURLを貼る";
+
+
+suggestButton.addEventListener(
+    "click",
+    function () {
+
+        suggestModal.classList.add("show");
+
+        suggestWord.focus();
+
+    }
+);
+
+
+cancelSuggest.addEventListener(
+    "click",
+    function () {
+
+        suggestModal.classList.remove("show");
+
+    }
+);
+
+
+submitSuggest.addEventListener(
+    "click",
+    async function () {
+
+        const word =
+            suggestWord.value.trim();
+
+        const meaning =
+            suggestMeaning.value.trim();
+
+        const example =
+            suggestExample.value.trim();
+
+        const note =
+            suggestNote.value.trim();
+
+
+        if (word === "") {
+
+            alert("単語を入力してください。");
+
+            suggestWord.focus();
+
+            return;
+
+        }
+
+
+        submitSuggest.disabled = true;
+
+        submitSuggest.textContent =
+            "送信中...";
+
+
+        try {
+
+            await fetch(
+                SCRIPT_URL,
+                {
+                    method: "POST",
+
+                    mode: "no-cors",
+
+                    headers: {
+                        "Content-Type":
+                            "text/plain"
+                    },
+
+                    body: JSON.stringify({
+
+                        word: word,
+
+                        meaning: meaning,
+
+                        example: example,
+
+                        note: note
+
+                    })
+
+                }
+            );
+
+
+            alert(
+                "提案を送信しました！\n" +
+                "管理者の確認後、採用されます。"
+            );
+
+
+            suggestWord.value = "";
+            suggestMeaning.value = "";
+            suggestExample.value = "";
+            suggestNote.value = "";
+
+
+            suggestModal.classList.remove(
+                "show"
+            );
+
+
+        } catch (error) {
+
+            alert(
+                "送信に失敗しました。\n" +
+                "時間をおいてもう一度試してください。"
+            );
+
+            console.error(error);
+
+        }
+
+
+        submitSuggest.disabled = false;
+
+        submitSuggest.textContent =
+            "提案する";
+
+    }
+);
 
         displayResults(results);
 
@@ -372,29 +527,86 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div class="tags">
 
-                    ${
-                        item.type
-                        ? `<span>${escapeHTML(item.type)}</span>`
-                        : ""
-                    }
+    ${
+        item.type
+        ? `<span>${escapeHTML(item.type)}</span>`
+        : ""
+    }
 
-                    ${
-                        item.grade
-                        ? `<span>${escapeHTML(item.grade)}</span>`
-                        : ""
-                    }
+    ${
+        item.grade
+        ? `<span>${escapeHTML(item.grade)}</span>`
+        : ""
+    }
 
-                    ${
-                        item.week
-                        ? `<span>第${escapeHTML(item.week)}週</span>`
-                        : ""
-                    }
+    ${
+        item.week
+        ? `<span>第${escapeHTML(item.week)}週</span>`
+        : ""
+    }
 
-                </div>
+</div>
+
+<button
+    class="share-button"
+    type="button"
+>
+    共有
+</button>
             `;
 
 
             resultList.appendChild(card);
+
+const shareButton = card.querySelector(".share-button");
+
+shareButton.addEventListener("click", async function () {
+
+    const shareText =
+        `${item.word}\n\n` +
+        (item.meaning
+            ? `意味：${item.meaning}\n`
+            : "") +
+        (item.example
+            ? `用例：${item.example}\n`
+            : "") +
+        (item.note
+            ? `備考：${item.note}\n`
+            : "") +
+        `\n鉄緑会大阪校 語録`;
+
+    if (navigator.share) {
+
+        try {
+
+            await navigator.share({
+                title: item.word,
+                text: shareText
+            });
+
+        } catch (error) {
+
+            // 共有をキャンセルした場合は何もしない
+
+        }
+
+    } else {
+
+        try {
+
+            await navigator.clipboard.writeText(shareText);
+
+            alert("共有文をコピーしました！");
+
+        } catch (error) {
+
+            alert("共有文のコピーに失敗しました。");
+
+        }
+
+    }
+
+});
 
         });
 
