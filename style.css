@@ -1,0 +1,478 @@
+/* =========================
+   基本設定
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    background: #f6f6f6;
+
+    color: #222;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans JP",
+        sans-serif;
+}
+
+
+/* =========================
+   ヘッダー
+========================= */
+
+.header {
+    background: white;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.header-inner {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 24px 20px;
+}
+
+
+.header h1 {
+    margin: 0;
+
+    font-size: 28px;
+}
+
+
+.header p {
+    margin: 5px 0 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================
+   メイン
+========================= */
+
+.container {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 40px 20px;
+}
+
+
+
+/* =========================
+   検索
+========================= */
+
+.search-section {
+    margin-bottom: 40px;
+}
+
+
+.search-section h2 {
+    margin-top: 0;
+
+    font-size: 20px;
+}
+
+
+
+/* =========================
+   文字検索
+========================= */
+
+.search-box {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.search-box input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 14px 16px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    background: white;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.search-box input:focus {
+    border-color: #555;
+}
+
+
+.search-box button {
+    padding: 0 24px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #333;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.search-box button:hover {
+    background: #555;
+}
+
+
+
+/* =========================
+   フィルター
+========================= */
+
+.filters {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+.filter {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+.filter label {
+    font-size: 13px;
+
+    color: #666;
+}
+
+
+.filter select {
+    min-width: 140px;
+
+    padding: 9px 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    background: white;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================
+   リセット
+========================= */
+
+.reset-button {
+    margin-top: 15px;
+
+    padding: 8px 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    background: white;
+
+    color: #555;
+
+    cursor: pointer;
+}
+
+
+.reset-button:hover {
+    background: #eee;
+}
+
+
+
+/* =========================
+   結果ヘッダー
+========================= */
+
+.result-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+
+.result-header h2 {
+    margin: 0;
+
+    font-size: 20px;
+}
+
+
+#resultCount {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================
+   単語カード
+========================= */
+
+.result-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.word-card {
+    padding: 22px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+}
+
+
+
+/* =========================
+   単語
+========================= */
+
+.word-title {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+.word {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+.reading {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================
+   タグ
+========================= */
+
+.tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-bottom: 20px;
+}
+
+
+.tag {
+    display: inline-block;
+
+    padding: 4px 9px;
+
+    background: #eee;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    color: #555;
+}
+
+
+
+/* =========================
+   辞書項目
+========================= */
+
+.dictionary-item {
+    margin-top: 15px;
+}
+
+
+.dictionary-label {
+    margin-bottom: 5px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #777;
+}
+
+
+.dictionary-content {
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+
+/* =========================
+   用例
+========================= */
+
+.example-content {
+    padding: 10px 14px;
+
+    background: #f7f7f7;
+
+    border-left: 3px solid #ccc;
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================
+   備考
+========================= */
+
+.note-content {
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================
+   該当なし
+========================= */
+
+.no-result {
+    padding: 50px 20px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    color: #888;
+}
+
+
+
+/* =========================
+   フッター
+========================= */
+
+.footer {
+    margin-top: 50px;
+
+    padding: 25px;
+
+    border-top: 1px solid #ddd;
+
+    text-align: center;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+
+/* =========================
+   スマホ対応
+========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 15px;
+    }
+
+
+    .search-box {
+        gap: 6px;
+    }
+
+
+    .search-box button {
+        padding: 0 16px;
+    }
+
+
+    .filters {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .filter select {
+        width: 100%;
+    }
+
+
+    .word-card {
+        padding: 17px;
+    }
+
+
+    .word {
+        font-size: 22px;
+    }
+
+}
