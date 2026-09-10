@@ -494,3 +494,25 @@ body {
 .share-button:active {
     transform: scale(0.97);
 }
+.suggest-type {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.suggest-type label {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.suggest-type input {
+    width: auto;
+    margin-right: 5px;
+}
+
+.optional {
+    font-size: 12px;
+    font-weight: normal;
+    color: #777;
+    margin-left: 5px;
+}
