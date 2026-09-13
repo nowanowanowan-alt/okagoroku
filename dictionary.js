@@ -1,50 +1,51 @@
 const dictionary = [
     {
         word: "いやいや出来ましたよ！って人",
-        meaning: "",
-        example: "「この問題はやっぱり例年出来てる子少ないよね。いやいや出来ましたよ！って人 ナイス」<br>「いやいや出来ましたよ！って人 それでいい」",
+        meaning: "解けていない前提で話を進めていた問題が解けていた人。",
+        example: "「この問題はやっぱり例年出来てる子少ないよね。いやいや出来ましたよ！って人 ナイス」
+「いやいや出来ましたよ！って人 それでいい」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
 
     {
         word: "後学のため",
-        meaning: "",
+        meaning: "大学受験のその先の(英語)学習のため。",
         example: "「この辺はもはや英語関係ないけどね まあ後学のためにということで」",
-        note: "",
-        type: "",
+        note: "｢向学｣の可能性",
+        type: "OK",
         grade: "",
         week: ""
     },
 
     {
         word: "飛びついたらあかん",
-        meaning: "",
+        meaning: "他の可能性を考えずに思い込みで答えてはいけない。",
         example: "「選択肢みてすぐ飛びついたらあかん 問題作った人との対話ができてないかなちょっとそれは」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
 
     {
         word: "向こうの人",
-        meaning: "",
+        meaning: "英語ネイティブ話者。",
         example: "「ここ文法おかしいやーんって？いやそんなん僕に言われても...向こうの人も文法とか考えてないと思う」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
 
     {
         word: "一瞬頭かすめる",
-        meaning: "",
-        example: "「(英作)ここの『〇〇』は仮定法も一瞬頭かすめるべきじゃない？仮定法にするか迷って結果直説法にするんはまあ悪くないけど...んーでもまあなんも考えず直説法はちょっとイケてないよね。てか考えたんやったらわざわざ仮定法外す意味無くない？」",
+        meaning: "ある可能性が一瞬頭をよぎる。",
+        example: "「(英作)ここの『〇〇』は仮定法も一瞬頭かすめるべきじゃない？仮定法にするか迷って結果直説法にしたんやったら良い話はできるかもやけど...んーでもまあなんも考えず直説法はちょっとイケてないよね。てか考えたんやったらわざわざ仮定法外す意味無くない？」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
@@ -54,7 +55,7 @@ const dictionary = [
         meaning: "",
         example: "「ここの部分は意訳するのも…まあ一考じゃない？と思いますけどね まあこんなこと言ったら次妙な意訳が横行し始めるからあんま言いたないねんけど」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
@@ -63,38 +64,38 @@ const dictionary = [
         word: "も↓は↑や↓",
         meaning: "",
         example: "",
-        note: "一般的な発音(も↑はや↓)とは異なることに注意",
-        type: "",
+        note: "一般的な発音(も↑はや↓)とは異なることに注意／稀に｢も↑は↑や↑｣になる",
+        type: "OK",
         grade: "",
         week: ""
     },
 
     {
         word: "樹液",
-        meaning: "",
+        meaning: "飲み物等が口に合わない。",
         example: "「ちょっと前年代物のワイン飲む機会あったんよ、飲む機会言うても試飲会みたいなんやけどね？それで100年物みたいなワイン飲んだんやけど。樹液。いや樹液飲んだことないけどね？樹液飲んだらこんな味なんやろなーっていう味」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
 
     {
         word: "いいサンプル",
-        meaning: "",
+        meaning: "例題 / 基本を問う問題としての質が良い。",
         example: "「この問題めっちゃいいサンプルなんよ、でもみんなはこのレベルに合った答案書けてるの？っていう」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
 
     {
         word: "試金石",
-        meaning: "",
+        meaning: "いいサンプル。",
         example: "",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
@@ -104,17 +105,18 @@ const dictionary = [
         meaning: "",
         example: "「んーなんていうかなー結局やっぱそこよね。出来てるんやったらこっちも何も言わへんけど、この現状見せつけられるとこっちもこう言わざるを得ないよね。まあ毎年こんな感じやからもはや慣れたけどね...いや慣れさせんといてて感じやけど。こんな慣れいらんねん」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
 
     {
         word: "ストック",
-        meaning: "",
-        example: "「これはストック案件ですね？」<br>｢やっぱりストック量がまだまだ足りてなさそうやなっていうのが答案見て伝わってくるよね｣",
+        meaning: "単語や表現の蓄え。",
+        example: "「これはストック案件ですね？」
+｢やっぱりストック量がまだまだ足りてなさそうやなっていうのがみんなの答案見て伝わってくるよね｣",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
@@ -124,7 +126,7 @@ const dictionary = [
         meaning: "",
         example: "「前回の英作ほんまに酷かったよ？採点しててイライラしてきたもん。だって去年のA1より悪いんはどうかしてるよ」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
@@ -134,17 +136,17 @@ const dictionary = [
         meaning: "",
         example: "「こういうのって定期的に巡回しとかないとすぐ忘れるからね」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
 
     {
         word: "単位時間で",
-        meaning: "",
+        meaning: "想定の時間通りに。",
         example: "「ということで...この問題冗談抜きで単位時間で満点取れますが。どうなんって話」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
@@ -154,17 +156,567 @@ const dictionary = [
         meaning: "初見で正解することは難しいが、決まりきった答えがあるため知っていれば簡単に正解できる問題。",
         example: "「けどこの問題もはやヤラセなんよねーみんな色んな答え書いてくれたと思うんやけど」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
 
     {
         word:"いつなんどき", 
+        meaning: "いつ同じような問題が出てもおかしくない。",
+        example: "こういうのっていつなんどきやからね。英語ってそんなもんよ。",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"nevertheless以来の衝撃", 
+        meaning: "insofarなど、1語でそれを分解した複数語と同じ意味を持つ単語に対する驚き。",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"氷山の一角", 
         meaning: "",
         example: "",
         note: "",
-        type: "",
+        type: "OK",
+        grade: "高2",
+        week: "1"
+    },
+
+    {
+        word:"こっからは独り言やねんけど", 
+        meaning: "あまり授業の場で言うには相応しくないが。",
+        example: "｢こっからは独り言やねんけど、この問題(和訳)、文構造外した答案書かれるとこっちめっちゃ採点面倒臭いんよ。まあ今回は好意的に見て合ってるとこは合ってるとこで点あげるけどね？本番やったら『………。バツ。』かもしれへんよ？本番って印象採点やからね？｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"持ち歩く", 
+        meaning: "ある知識等が常に思い出せる状態である。",
+        example: "｢この"principle"ですが...僕は訳4つ持ち歩いてますよ？原理原則主義主張。鉄壁にも書いてるからね。あんまり知りませんでしたとか言わないでね？せめて忘れてましたって言って。｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"受験生をバカにしている", 
+        meaning: "受験生として英語の勉強に励んだ者であれば当然知っているべき単語の意味に、大学側が試験で注釈を過剰に付す行為は、受験生の努力を軽視することに等しいのではないかという提唱。",
+        example: "｢千葉大学、受験生をバカにしている｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"お手並み拝見", 
+        meaning: "",
+        example: "｢高1高2からずっと上位クラスおった子、ていうかそういう子ほど明らかに手抜いてるからね？もちろん全員じゃないけどね。高３から入ってきた子は引き続きお手並み拝見って感じやけど｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"1枚足りない？どっか横回して", 
+        meaning: "",
+        example: "",
+        note: "OK先生の授業では予め人数を数えたうえで準備してからプリントを配るため、基本的に過不足は発生しない。",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"みんなからしたらいい迷惑", 
+        meaning: "",
+        example: "｢筆者は分かりやすくしたろー思て例挙げて書いてるわけやけど、みんなからしたらいい迷惑なわけよね。こうやって遠く離れた日本の受験生が『比喩の解除』とか言うて必死に勉強してるのって...なんか変よね｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"色んな筆者がいる", 
+        meaning: "",
+        example: "｢筆者って、コンマ必要な場所に置かん人とか、逆にここ絶対要らんやろみたいなとこに置いてくる人とか、色んな筆者がいるよね｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"エ、エ、エ、エ、エスんだい模試", 
+        meaning: "駿台模試。",
+        example: "",
+        note: "他塾の名前は立場上触れづらい。",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"最終局面", 
+        meaning: "受験直前期になって重要になるポイント。",
+        example: "｢ここの"the"、今回は『その』って訳出しないですね？...しないですね？え、しないんですかって？しないですよ？まあ最終局面ってこういうとこになってくるよね。たかが1点、されど1点。この1点でかいよー？｣",
+        note: "言い換え...最後のピース、ピラミッドの頂点",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"後付け", 
+        meaning: "テスト後に適当な理由を付けて自分の答案を正当化しようとする行為。",
+        example: "｢(英作で、『しかし、〜。』の『〜』部分にのみ下線が施されている問題)ここよく見たら文頭小文字スタートやけど大丈夫？よく見てとしか言いようがないけど。いやいや文中でhowever挿入したら文頭大文字でもいいじゃないですかって？...じゃあhoweverのとこどうするん？てかそういうこと言ってくる人って大体テスト中そんなん考えてない人やからね。だって考えれば考えるほど文頭小文字にするもん。後付けは良くない｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"たかが1点と思うなよ", 
+        meaning: "1点という点数以上の",
+        example: "｢ここの"they"誰のこと指してるかちゃんと考えた？『彼ら』一辺倒はあかんよ？まあ今回『彼ら』って書いてしまった人はねー、これ言うの何回目？そろそろ意識してもらわんと困る。たかが1点と思うなよ。この1点周り全員取ってくるからね｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"一辺倒", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"あんま言い過ぎると", 
+        meaning: "",
+        example: "｢(長文の記号問題)ここは毎年正答率高いとこやからまあ...今年も全員正解ちゃうかな？昔の東大ってこういう問題出してきがちよね。熟語聞いてみただけやんみたいな。"once in a while"の意味聞いてみましたっていうのも昔あったよね？あんま言い過ぎると間違えちゃいましたっていう人傷ついちゃうかもやけど｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"スタンスの問題", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"潔い", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"往年の名選手", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"みんなの自由英作", 
+        meaning: "",
+        example: "｢この筆者めっちゃ単純。みんなの自由英作と同じ｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"こんな所で体力使ってる場合ではない", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"ド間違う", 
+        meaning: "",
+        example: "｢(和訳問題で、答案に書く日本語が)くどいからバツ、はないからね。補うところをド間違ってたらそれはまた話別やけど｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"倒置来るぞ倒置来るぞ倒置来るぞ倒置来るぞ倒置来るぞ倒置来るぞ倒置来るぞ", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"トム、つまりボブ", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"引くなら引いてくれ", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"息がかかってる", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"発動", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"ごめん言い過ぎた", 
+        meaning: "",
+        example: "｢例なんて無限にあるからね？ごめん言い過ぎた。パッと思いつくので5個くらいあるんちゃう？｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"名言言っとく？", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"このセンス", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"前置詞は雄弁", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"調子良く書いてるけど間違ってる", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"思いつくと思うなよ", 
+        meaning: "",
+        example: "｢『ちょっと考えたらいい訳思いつくんじゃないかな？』ちゃうからね？現状。そんなんで時間使ったからといって思いつくと思うなよ｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"大なり小なり", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"ご都合主義", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"drrrrrrr...", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"far見たらfrom症候群", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"下線部訳補正", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"ここは難しい。いや難しいんかな？", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"もっかい言っていい？", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"ちゃんちゃらおかしい", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"最終便", 
+        meaning: "最終確認。",
+        example: "｢もうこのテーマ扱う機会ほぼないからね？最終便も最終便よ。未だにこれ忘れる人はねー、もうそろそろ...もう知らんからねとはこっちも言えないからね｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"うちの鬼畜テキスト", 
+        meaning: "",
+        example: "｢この例文ねー実は中２からの使い回しなんよね。こんなむずいのを中２にやらせるっていううちの鬼畜テキストね。多分当時はへーって聞き流してたと思うけど今になって回ってくるっていうね｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"日本語が素敵なだけやねん", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"厭わな聞き手", 
+        meaning: "",
+        example: "｢(a willing listenerの訳)イトワナ…厭わな聞き手はやばいよね？｣",
+        note: "",
+        type: "OK",
+        grade: "高3",
+        week: "16"
+    },
+
+    {
+        word:"お里が知れる", 
+        meaning: "テスト(主に入試)において詰めの甘い答案を書くと、その人の日頃の勉強量が採点者に伝わる。",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"混迷を極める", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "高3",
+        week: "10"
+    },
+
+    {
+        word:"困ったら人殺す", 
+        meaning: "自分の体験を絡めた条件英作において、書く内容に困ったら誰かが死んだことにすれば論を展開しやすい。",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "高3",
+        week: "11"
+    },
+
+    {
+        word:"悲劇", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"不審者", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"刹那的", 
+        meaning: "その場限りの。",
+        example: "｢刹那的な直ししても意味ないんよ｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"イズム", 
+        meaning: "",
+        example: "｢(京大入試について)和訳に関してイズムは変わってない。でも最近ちょっと京大迷走してるね？長文の中に条件英作入れてみたりね｣",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"攻めたね？", 
+        meaning: "",
+        example: "｢だからここの話、奥さんが生足で踊って誘惑してくるって言ってるわけよ。この文章を大学入試に出すっていう。攻めたね？大阪府立大学｣",
+        note: "",
+        type: "OK",
+        grade: "高3",
+        week: "10"
+    },
+
+    {
+        word:"中１から高３までずっと同じこと言います僕は", 
+        meaning: "",
+        example: "",
+        note: "",
+        type: "OK",
+        grade: "",
+        week: ""
+    },
+
+    {
+        word:"っていう件ね？", 
+        meaning: "ご存知の通り、〜である。",
+        example: "｢ofは『の』とは限らないっていう件ね？逆も然りやけどね。これ意識しないとみんなすぐ『の』に飛びつくやろ？｣",
+        note: "",
+        type: "OK",
         grade: "",
         week: ""
     },
@@ -172,9 +724,9 @@ const dictionary = [
     {
         word: "物量作戦",
         meaning: "",
-        example: "「ということで...今回時制間違えた人は時制やばいってのに気づいたと思いますが。逆に今回間違えへんかった人も次は危ないからね。だからねーもう明日から朝起きたら『時制注意時制注意時制注意』で10回言うとかね？そういう具体的な対策立てないと。いや冗談抜きでね？結局最後は物量作戦なんよ」",
+        example: "「ということで...今回時制間違えた人は時制やばいってのに気づいたと思いますが。逆に今回間違えへんかった人も次は危ないからね。だからねーもう明日から朝起きたら『時制注意時制注意時制注意』って10回言うとかね？そういう具体的な対策立てないと。いや冗談抜きでね？結局最後は物量作戦なんよ」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     },
@@ -182,9 +734,9 @@ const dictionary = [
     {
         word: "モグラ叩き状態",
         meaning: "",
-        example: "「今回間違えた人は次『主語人にする』って覚えてると思うねんけど、今度は今回間違えんかった人がニョキニョキって主語人じゃない英作書いてくるんよね。だからもうモグラ叩き状態なんよ。こっち叩いたら次あっち、あっち叩いたら次こっちやって」",
+        example: "「今回間違えた人は次『主語人にする』って覚えてると思うねんけど、今度は今回間違えんかった人がニョキニョキって主語人じゃない英作書いてくるんよね。だからもうモグラ叩き状態なんよ。こっち叩いたら次あっち、あっち叩いたら次こっちって」",
         note: "",
-        type: "",
+        type: "OK",
         grade: "",
         week: ""
     }
@@ -564,9 +1116,19 @@ submitSuggest.addEventListener(
 <button
     class="share-button"
     type="button"
+    aria-label="共有"
+    title="共有"
 >
-    共有
+    <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+    >
+        <path d="M12 16V3"></path>
+        <path d="M7 8l5-5 5 5"></path>
+        <path d="M5 12v7h14v-7"></path>
+    </svg>
 </button>
+
             `;
 
 
@@ -577,17 +1139,9 @@ const shareButton = card.querySelector(".share-button");
 shareButton.addEventListener("click", async function () {
 
     const shareText =
-        `${item.word}\n\n` +
-        (item.meaning
-            ? `意味：${item.meaning}\n`
-            : "") +
-        (item.example
-            ? `用例：${item.example}\n`
-            : "") +
-        (item.note
-            ? `備考：${item.note}\n`
-            : "") +
-        `\n鉄緑会大阪校 語録`;
+    `${item.word} (${item.type})\n\n` +
+    `鉄緑会大阪校 語録\n` +
+    `https://nowanowanowan-alt.github.io/okagoroku/`; `;
 
     if (navigator.share) {
 
@@ -664,8 +1218,6 @@ shareButton.addEventListener("click", async function () {
         search
     );
 
-
-    // ★ここが重要
     // ページを開いた瞬間に全単語を表示
     search();
 
