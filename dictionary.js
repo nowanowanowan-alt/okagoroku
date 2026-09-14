@@ -1141,7 +1141,7 @@ shareButton.addEventListener("click", async function () {
     const shareText =
     `${item.word} (${item.type})\n\n` +
     `鉄緑会大阪校 語録\n` +
-    `https://nowanowanowan-alt.github.io/okagoroku/`; `;
+    `https://nowanowanowan-alt.github.io/okagoroku/`;
 
     if (navigator.share) {
 
