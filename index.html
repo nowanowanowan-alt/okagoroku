@@ -72,6 +72,46 @@
     <!-- 検索結果 -->
     <section class="result-section">
 
+<div class="sort-box">
+
+    <label for="sortSelect">
+        並び替え：
+    </label>
+
+    <select id="sortSelect">
+
+        <option value="default">
+            データ順
+        </option>
+
+        <option value="kana">
+            50音順
+        </option>
+
+        <option value="kana-reverse">
+            50音逆順
+        </option>
+
+        <option value="grade">
+            学年が早い順
+        </option>
+
+        <option value="grade-reverse">
+            学年が遅い順
+        </option>
+
+        <option value="week">
+            週が早い順
+        </option>
+
+        <option value="week-reverse">
+            週が遅い順
+        </option>
+
+    </select>
+
+</div>
+
         <div class="result-header">
             <h2>検索結果</h2>
             <span id="resultCount">0件</span>
@@ -191,7 +231,7 @@
                 <input
                     type="text"
                     id="suggestName"
-                    placeholder="空欄なら匿名"
+                    placeholder="管理人が知ってる名前だと採用確率が上がります(任意)"
                 >
             </label>
 
@@ -220,4 +260,3 @@
 
 </body>
 </html>
-```
